@@ -24,12 +24,14 @@ public class RotateMatrixInPlace {
                 matrix[i][j] =  matrix[j][i] ;
                 matrix[j][i] = temp;
             }
-            // int k;
+            
           for(int i=0;i<matrix.length;i++){
-              for(int j=0, k = matrix.length-1;j<k;j++,k--){
+              int k = matrix.length - 1;
+              for(int j=0;j<k;j++){
                   int temp = matrix[j][i];
                   matrix[j][i] = matrix[k][i];
                   matrix[k][i] = temp;
+                  k--;
               }
           }
     }
