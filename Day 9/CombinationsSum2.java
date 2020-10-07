@@ -20,7 +20,7 @@ public class CombinationsSum2 {
          }
 }
  
- private static void goSolveThis(int[] combinations, int target, List<List<Integer>> list, List<Integer> temp, int start) {
+ private static void goSolveThis(int[] combinations, int target, List<List<Integer>> list, List<Integer > temp, int start) {
      if(target == 0){
          list.add(new ArrayList<>(temp));
          return;
